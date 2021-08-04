@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!— 导入bootstrap3 css部分用于文本输入框按钮等控件的美化。—>
+<link type="text/css" href="{{ url_for('static',filename='bootstrap-3.3.7-dist/css/bootstrap.min.css')}}" rel="stylesheet">
+
+<!-- 导入jquery用于发送ajax请求-->
+<script src="{{ url_for('static',filename='js/jquery-2.1.1.min.js')}}"></script>
+
+<!-- 导入bootstrap3 js部分用于控件中的效果-->
+<script src="{{ url_for('static',filename='bootstrap-3.3.7-dist/js/bootstrap.min.js')}}"></script>
+
+ <!-- 导入我们自己的js部分用于控件中的效果-->
+<script type="text/javascript" src="{{ url_for('static',filename='js/try.js')}}"></script>
+
+<script type="text/javascript">$(init);</script>
+
+<script type="text/javascript">$.ajaxSetup({
+    data: {csrfmiddlewaretoken: '6tuXkYOS6uhRbDX1BSC2wbZ5d3Js9DKpdBf9v3NlSfS8qXVI0BtGWH3LAV7AX98E' },});</script>
+
+
+
+<!-- 等待图标 -->
+
+<div id="loading">
+    <p><img src="{{ url_for('static',filename='img/loading.gif') }}" /></p>
+</div>
+
+
+<!-- 图标样式 -->
+<style>
+#loading{ display:none;
+          position:fixed;
+          left:47%;
+          top:68%;
+          z-index: 99;}
+</style>
+
+<hr/>
+
+
+<!-- 试用区的标题 -->
+<h3  align="center"><span class="label label-primary"> 试用区</span></h3>
+
+<br>
+
+
+<!-- 输入文本框 -->
+<div>
+    <form class="bs-example bs-example-form" role="form">
+        <div class="input-group">
+            <span class="input-group-addon">输入</span>
+            <textarea id="text-content" class="form-control" placeholder="在这里输入您想要识别标签的文本信息，可以是文章的标题或内容，评论以及相关的对话。我们将通过标准NLP流程，兴趣知识网络，和一些机器学习模型为您提供标签识别服务。" rows="10" cols="80"></textarea>
+        </div>
+        <br><br>
+
+<!-- 请求按钮 -->
+ <div class="button-div">
+           <button type="button" class="btn  btn-success btn-block" id="label-button">获取标签</button>
+      </div>
+      <br><br>
+
+
+<!-- 输出文本框 -->
+        <div class="input-group">
+            <span class="input-group-addon">输出</span>
+            <textarea id="label-result" class="form-control" type="text" placeholder='您将得到json格式的输出，如：[{"label":"王者农药", "score": 0.700987, "related":["游戏"]}]  其中score是label的置信打分，related是label的所有父级标签列表。' rows="10" cols="80"></textarea>
+        </div>
+    </form>
+</div>
+
+<br/>
+
+</html>

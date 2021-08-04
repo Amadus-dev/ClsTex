@@ -1,0 +1,6 @@
+{
+    "影视": ["D:\\DevelopProject\\PYproject\\ClsTex\\text_labeled\\model_train\\movie\\Tokenizer", 70, 2, "D:\\DevelopProject\\PYproject\\ClsTex\\text_labeled\\model_train\\movie\\token_indice", 139, "D:\\DevelopProject\\PYproject\\ClsTex\\text_labeled\\model_train\\movie\\model.h5"],
+    "美妆": ["D:\\DevelopProject\\PYproject\\ClsTex\\text_labeled\\model_train\\beauty\\Tokenizer", 70, 2, "D:\\DevelopProject\\PYproject\\ClsTex\\text_labeled\\model_train\\beauty\\token_indice", 139, "D:\\DevelopProject\\PYproject\\ClsTex\\text_labeled\\model_train\\beauty\\model.h5"],
+    "时尚": ["D:\\DevelopProject\\PYproject\\ClsTex\\text_labeled\\model_train\\fashion\\Tokenizer", 70, 2, "D:\\DevelopProject\\PYproject\\ClsTex\\text_labeled\\model_train\\fashion\\token_indice", 139, "D:\\DevelopProject\\PYproject\\ClsTex\\text_labeled\\model_train\\fashion\\model.h5"],
+    "明星": ["D:\\DevelopProject\\PYproject\\ClsTex\\text_labeled\\model_train\\star\\Tokenizer", 70, 2, "D:\\DevelopProject\\PYproject\\ClsTex\\text_labeled\\model_train\\star\\token_indice", 139, "D:\\DevelopProject\\PYproject\\ClsTex\\text_labeled\\model_train\\star\\model.h5"]
+}
